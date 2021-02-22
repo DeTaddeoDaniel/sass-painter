@@ -105,6 +105,16 @@
 
 /* ---- utility -----*/
 /* ---- utility display ----*/
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 /* ---- COLORE TESTO ----*/
 .text-text-light-blue {
   color: #009cff;
@@ -171,6 +181,9 @@ header {
   height: 100%;
 }
 
+.nav {
+  height: 100%;
+}
 .nav-item {
   color: #ffffff;
   text-decoration: none;
@@ -185,6 +198,10 @@ header {
 
 body {
   background: black;
+}
+
+ul li {
+  list-style: none;
 }
 
 /* ---- jumbotron ----*/
