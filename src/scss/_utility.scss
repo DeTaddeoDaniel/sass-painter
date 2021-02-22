@@ -1,1 +1,23 @@
-/* ---- utility vari ----*/
+/* ---- COLORE TESTO ----*/
+$colori :(
+    text-light-blue,
+    text-light-blue,
+    text-gray-dark,
+    text-white,
+    text-black,
+    text-logo,
+    text-purple
+);
+
+$text-light-blue: #009cff;
+$text-gray-dark: #989898;
+$text-white: #ffffff;
+$text-black: #020201;
+$text-logo: #d9d9d9;
+$text-purple: #c70e8b;
+
+@each $colore in $colori {
+    .text-#{$colore}{
+        // color: $#{$colore};
+    }
+};
