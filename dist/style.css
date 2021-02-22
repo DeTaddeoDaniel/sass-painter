@@ -171,6 +171,18 @@ header {
   height: 100%;
 }
 
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.nav-item:hover {
+  background: #ececec;
+  color: #020201;
+}
+
 body {
   background: black;
 }

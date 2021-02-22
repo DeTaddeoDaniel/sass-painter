@@ -15,7 +15,8 @@ __webpack_require__.r(__webpack_exports__);
 new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: '#app',
   data: {
-    message: 'testo di prova'
+    message: 'testo di prova',
+    navItem: ['produts', 'brushes', 'wacom tablets', 'special offerts', 'free trial', 'business', 'support', 'learning']
   }
 });
 
