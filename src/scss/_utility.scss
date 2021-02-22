@@ -13,3 +13,22 @@ $colori :(
         color: $value;
     }
 };
+
+/* ---- ALLINEAMENTO TESTO ----*/
+$allineamento :('left', 'right', 'center');
+
+@each $value in $allineamento {
+    .text-#{$value}{
+        text-align: unquote($value);
+    }
+};
+
+/* ---- SPESSORE ----*/
+$spessore :('bold', 'normal');
+
+@each $value in $spessore {
+    .text-#{$value}{
+        text-align: unquote($value);
+    }
+};
+

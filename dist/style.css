@@ -124,6 +124,28 @@
   color: #c70e8b;
 }
 
+/* ---- ALLINEAMENTO TESTO ----*/
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ---- SPESSORE ----*/
+.text-bold {
+  text-align: bold;
+}
+
+.text-normal {
+  text-align: normal;
+}
+
 /* ---- componenti base -----*/
 /* ---- card ----*/
 /* ---- nav ----*/
