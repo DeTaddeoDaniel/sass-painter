@@ -1,1 +1,9 @@
-alert('hello world');
+// alert('hello world');
+
+import Vue from 'vue';
+import Alert from './Alert.vue';
+
+new Vue({
+    el: '#app',
+    components: { Alert }
+});
