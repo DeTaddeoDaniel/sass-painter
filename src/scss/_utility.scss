@@ -9,7 +9,7 @@ $colori :(
 );
 
 @each $key, $value in $colori {
-    // .text-#{$key}{
-        // color: $#{$colore};
-    // }
+    .text-#{$key}{
+        color: $value;
+    }
 };

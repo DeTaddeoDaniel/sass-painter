@@ -100,6 +100,30 @@
 /* ---- utility -----*/
 /* ---- utility display ----*/
 /* ---- COLORE TESTO ----*/
+.text-text-light-blue {
+  color: #009cff;
+}
+
+.text-text-gray-dark {
+  color: #989898;
+}
+
+.text-text-white {
+  color: #ffffff;
+}
+
+.text-text-black {
+  color: #020201;
+}
+
+.text-text-logo {
+  color: #d9d9d9;
+}
+
+.text-text-purple {
+  color: #c70e8b;
+}
+
 /* ---- componenti base -----*/
 /* ---- card ----*/
 /* ---- nav ----*/
