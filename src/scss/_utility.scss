@@ -2,7 +2,6 @@
 $colori :(
     text-light-blue:$text-light-blue,
     text-gray-dark:$text-gray-dark,
-    text-gray-dark: $text-white,
     text-white: $text-white,
     text-black: $text-black,
     text-logo: $text-logo,
@@ -10,7 +9,7 @@ $colori :(
 );
 
 @each $key, $value in $colori {
-    // .text-#{$colore}{
+    // .text-#{$key}{
         // color: $#{$colore};
-    }
+    // }
 };
