@@ -1,6 +1,102 @@
 /* ---- variabili -----*/
 /* ---- struttura -----*/
 /* ---- colonne ----*/
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-offset-1 {
+  padding-left: 8.3333333333%;
+}
+
+.col-offset-2 {
+  padding-left: 16.6666666667%;
+}
+
+.col-offset-3 {
+  padding-left: 25%;
+}
+
+.col-offset-4 {
+  padding-left: 33.3333333333%;
+}
+
+.col-offset-5 {
+  padding-left: 41.6666666667%;
+}
+
+.col-offset-6 {
+  padding-left: 50%;
+}
+
+.col-offset-7 {
+  padding-left: 58.3333333333%;
+}
+
+.col-offset-8 {
+  padding-left: 66.6666666667%;
+}
+
+.col-offset-9 {
+  padding-left: 75%;
+}
+
+.col-offset-10 {
+  padding-left: 83.3333333333%;
+}
+
+.col-offset-11 {
+  padding-left: 91.6666666667%;
+}
+
+.col-offset-12 {
+  padding-left: 100%;
+}
+
 /* ---- utility -----*/
 /* ---- utility display ----*/
 /* ---- utility vari ----*/

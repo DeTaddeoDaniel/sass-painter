@@ -1,1 +1,21 @@
 /* ---- colonne ----*/
+@function calcWidth($number){
+    @return (100% / 12 ) * $number;
+}
+
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: calcWidth($i);
+    }
+}
+
+@function calcOffset($number){
+    @return (100% / 12 ) * $number;
+}
+
+@for $i from 1 through 12{
+    .col-offset-#{$i}{
+        padding-left: calcOffset($i);
+    }
+}
