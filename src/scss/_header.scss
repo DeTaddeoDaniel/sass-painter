@@ -1,1 +1,19 @@
 /* ---- header ----*/
+header{
+    height: $height-header;
+    background-color: $bg-header;
+}
+
+.logo{
+    height: 50px;
+    padding: 13px 25px;
+
+    & img{
+        height: 100%;
+    }
+}
+
+
+body{
+    background: black;
+}

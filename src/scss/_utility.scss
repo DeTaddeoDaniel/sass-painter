@@ -23,7 +23,7 @@ $allineamento :('left', 'right', 'center');
     }
 };
 
-/* ---- SPESSORE ----*/
+/* ---- SPESSORE TESTO ----*/
 $spessore :('bold', 'normal');
 
 @each $value in $spessore {
