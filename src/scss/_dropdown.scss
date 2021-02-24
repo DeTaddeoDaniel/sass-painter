@@ -1,1 +1,25 @@
-/* ---- dropdown ----*/
+.nav-item:hover .dropdown-items{
+    display: block;
+}
+
+.dropdown-items{
+    position: absolute;   
+    left: 0;
+    top: 30px;
+    display: none;
+}
+
+.dropdown-item{
+    background-color: $bg-section;
+    padding: 13px 20px;
+    color: black;
+    width: 200px;
+
+    &:hover{
+        background-color: darken($bg-section, 20%);
+    }
+
+    &:last-child{
+        border-bottom: 0;
+    }
+}

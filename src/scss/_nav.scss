@@ -1,1 +1,17 @@
 /* ---- nav ----*/
+.contact{
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    & .contact-text{
+        margin-left: 5px;
+    }
+
+    & a:hover .contact-text{
+        color: white;
+        text-decoration: underline;
+    }
+}

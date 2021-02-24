@@ -17,6 +17,23 @@
         <!-- header -->
         <header>
             <div class="container">
+
+                <!-- contact button -->
+                <div class="contact">
+                    
+                    <a class="ml-25 text-right" v-for="contact in contacts">
+                        <span class="contact-icon text-light-blue" v-html="contact.icon"></span>
+                        <span class="contact-text text-gray-dark capitalizze">{{contact.text}}</span>
+                    </a>
+                    
+                    <select class="ml-10">
+                        <option value="">English</option>
+                        <option value="">Deushland</option>
+                        <option value="">Francais</option>
+                    </select>
+
+                </div>
+
                 <div class="col-12 d-flex">
 
                     <!-- nav left -->
@@ -26,16 +43,26 @@
 
                     <!-- nav right -->
                     <div class="nav">
-                        <ul class="d-flex">
+                        <ul class="d-flex nav-items">
                             <li v-for="item in navItem">
+
                                 <a href="#" class="nav-item">
-                                    {{item}}
+                                    
+                                    <!-- title -->
+                                    <span v-if="!item.dropdown">{{item.title}}</span>
+                                    <span v-if="item.dropdown" class="icon dropdown">{{item.title}}  </span>
+                                    
+                                    <!-- dropdown -->
+                                    <ul v-if="item.dropdown" class="dropdown-items">
+                                        <li  class="dropdown-item" v-for="itemText in item.itemDropdown" >{{itemText.title}}</li>
+                                    </ul>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
                 </div>
+
             </div>
         </header>
 
@@ -201,7 +228,7 @@
         </section>
 
         <!-- footer -->
-        <footer>
+        <footer class="bg">
             <div class="container d-flex-between">
                 <div class="left">
                     <img class="footer-pubblicita mx-15" src="img/corelAdvantage.png" alt="">

@@ -23,14 +23,28 @@ header{
         display: inline-block;
         padding: 10px 20px;
         text-transform: capitalize;
+        font-size: 13px;
+        position: relative;
     }
 
     &-item:hover{
         background: $bg-section;
         color: $text-black;
+        position: relative;
     }
 }
 
+ .icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dropdown::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+  }
 
 body{
     background: black;

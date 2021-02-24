@@ -9,15 +9,127 @@ new Vue({
     data:{
         message: 'testo di prova', 
 
+        contacts:[
+            {
+                icon: `<i class="fas fa-phone-alt"></i>`,
+                text: '1-877-582-6735'
+            },
+            {
+                icon: `<i class="fas fa-comment-alt"></i>`,
+                text: 'Chat'
+            },
+            {
+                icon: `<i class="fas fa-user"></i>`,
+                text: 'Sign-in'
+            },
+            {
+                icon: `<i class="fas fa-shopping-cart"></i>`,
+                text: 'Cart'
+            },
+        ],
+
         navItem:[
-            'produts', 
-            'brushes', 
-            'wacom tablets', 
-            'special offerts', 
-            'free trial', 
-            'business', 
-            'support', 
-            'learning'
+            {
+                title: 'produts',
+                dropdown: true,
+                itemDropdown:[
+                    {
+                        title:'digital painting',
+                        dropdown:true,
+                        itemDropdown:null
+                    },
+                    {
+                        title:'lincesing & education',
+                        dropdown:true,
+                        itemDropdown:null
+                    },
+                    {
+                        title:'mobile apps',
+                        dropdown:true,
+                        itemDropdown:null
+                    },
+                    {
+                        title:'wacom tablets',
+                        dropdown:true,
+                        itemDropdown:null
+                    },
+                ]
+            },
+            {
+                title: 'brushes',
+                dropdown: true,
+                itemDropdown:[
+                    {
+                        title:'painter',
+                        dropdown:false,
+                    },
+                    {
+                        title:'particle shop',
+                        dropdown:false,
+                    },
+                    {
+                        title:'painter essetials',
+                        dropdown:false,
+                    },
+                ]
+            },
+            {
+                title: 'wacom tablets',
+                dropdown: false,
+            },
+            {
+                title: 'special offerts',
+                dropdown: false,
+            },
+            {
+                title: 'free trial',
+                dropdown: false,
+            },
+            {
+                title: 'business',
+                dropdown: false,
+            },
+            {
+                title: 'support',
+                dropdown: true,
+                itemDropdown:[
+                    {
+                        title:'patches & updates',
+                        dropdown:false,
+                    },
+                    {
+                        title:'knowledbase',
+                        dropdown:false,
+                    },
+                    {
+                        title:'view all',
+                        dropdown:false,
+                    }
+                ]
+            },
+            {
+                title: 'learning',
+                dropdown: true,
+                itemDropdown:[
+                    {
+                        title:'tutorial',
+                        dropdown:false,
+                    },
+                    {
+                        title:'tips & tricks',
+                        dropdown:false,
+                    },
+                    {
+                        title:'artist interviews',
+                        dropdown:false,
+                    },
+                    {
+                        title:'webninar library',
+                        dropdown:false,
+                    },
+                ]
+            }
+
         ],
 
         cards1:[
