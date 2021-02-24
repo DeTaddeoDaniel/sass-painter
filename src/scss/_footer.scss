@@ -43,7 +43,26 @@
     }
 }
 
+footer{
+    padding: 10px 20px 20px 20px;
+    background-color: $bg-footer;
 
+    & li a{
+        color: $text-gray-dark;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    & li a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    & .copyright{
+        font-size: 12px;
+    }
+}
 
 /*
                                 

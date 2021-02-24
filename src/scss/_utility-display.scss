@@ -27,10 +27,19 @@
     @include flex-columns(flex-start);
 }
 
+.d-flex-between{
+    @include flex(space-between);
+
+}
+
 /* ---- PADDING e MARGIN -------*/
 .p-jumbotron{
     padding-top: 15px;
     padding-bottom: 35px;
+}
+
+.p-15{
+    padding:15px;
 }
 
 .mx-35{
