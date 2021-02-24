@@ -9,8 +9,23 @@ $colori :(
 );
 
 @each $key, $value in $colori {
-    .text-#{$key}{
+    .#{$key}{
         color: $value;
+    }
+};
+
+$bgColori :(
+    pink: $social-pink,
+    blue: $social-blue,
+    light-blue: $social-light-blue,
+    red: $social-red,
+    red-dark: $social-red-dark,
+    orange: $social-orange
+);
+
+@each $key, $value in $bgColori {
+    .bg-#{""+$key}{
+        background-color: $value;
     }
 };
 
@@ -28,9 +43,25 @@ $spessore :('bold', 'normal');
 
 @each $value in $spessore {
     .text-#{$value}{
-        text-align: unquote($value);
+        font-weight: unquote($value);
     }
 };
 
+.uppercase{
+    text-transform: uppercase;
+}
 
+/* ---- FONT-SIZE ----- */
+.text-21{
+    font-size: 21px;
+}
 
+.text-16{
+    font-size: 16px;
+}
+
+@mixin bg-image {
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,1 +1,77 @@
 /* ---- card ----*/
+.card{
+    background-color: white;
+    margin-left: 15px;      
+    margin-right: 15px;
+
+    & .content-card{
+        padding: 15px 25px 25px 25px;
+    }
+    
+    & img {
+        width: 100%;
+    }
+
+    & h4{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    & p{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 16px;
+    }
+
+}
+
+.card:hover{
+    .linking{
+        text-decoration: underline;
+    }
+}
+
+.promo-card{
+    min-height: 325px;
+    color: white;
+
+    & h4{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    & p{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 18px;
+    }
+
+    &-bg-1{
+        background-color: $bg-purple;
+    }
+
+    &-bg-img-1{
+        background-image: url('/img/wacom-painter-1.jpg');
+        @include bg-image;
+    }
+
+    &-bg-2{
+        background-color: $bg-dark;
+    }
+
+    &-bg-img-2{
+        background-image: url('/img/painter-master.jpg');
+        @include bg-image;
+    }
+
+    &-bg-3{
+        background-color: $bg-blue;
+    }
+
+    &-bg-img-3{
+        background-image: url('/img/business-education.jpg');
+        @include bg-image;
+    }
+}

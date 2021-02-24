@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painter</title>
     <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="app">
+
+        <!-- header -->
         <header>
             <div class="container">
                 <div class="col-12 d-flex">
+
+                    <!-- nav left -->
                     <div class="logo">
                         <img src="img/logo.png" alt="logo">
                     </div>
+
+                    <!-- nav right -->
                     <div class="nav">
                         <ul class="d-flex">
                             <li v-for="item in navItem">
@@ -25,10 +34,172 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </header>
-        <p class="text-lightBlue">{{message}}</p>
+
+        <!---- jumbotrom -->
+        <div class="jumbotron">
+            <div class="container">
+
+                <div class="content col-6 d-flex-columns">
+                    
+                    <!-- img jumbtron -->
+                    <img class="w-250" src="img/logo-2.png" alt="">
+
+                    <!-- title -->
+                    <p class="text-21 p-jumbotron">The most realistic painting experience you'll find hard to resist</p>
+
+                    <!-- description -->
+                    <span class="p-jumbotron">
+                        <p class="text-purple text-bold text-16 text-bold">Limited-time offer</p>
+                        <p class="text-purple text-16">Get Signature Style Brush Pack Bundle FREE (worth $179.99)</p>
+                    </span>
+
+                    <!-- button -->
+                    <div class="uppercase">
+                        <span class="btn-dark mr-20">learn more</span>
+                        <span class="btn-light">download now</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!----- sezione ---- -->
+        <section>
+
+            <div class="container">
+                
+                <!-- title section -->
+                <h2 class="text-center">More painting possibilities</h2>
+
+                <!-- card flex -->
+                <div class="cards d-flex mb-80">
+
+                    <!-- card -->
+                    <div class="card col-4" v-for="(item, index) in cards1">
+                        
+                        <!-- immagine card -->
+                        <div class="imgContainer">
+                            <img class="w-100" :src="'img/possibilities-'+(index+1)+'.jpg'" alt="">
+                        </div>
+
+                        <!-- contenuto card -->
+                        <div class="content-card">
+                            <h4>
+                                <span v-if="item.label" class="uppercase text-light-blue">new</span>
+                                <span class="capitalizze">{{item.title}}</span>
+                            </h4>
+                            <p>{{item.descrition}}</p>
+                            <span class="text-light-blue linking">Learn more</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- card orizzontali -->
+                <div class="promo">
+
+                    <!-- riga 1 -->
+                    <div class="col-12 d-flex mx-15">
+                        
+                        <!-- left -->
+                        <div class="col-6 promo-card promo-card-bg-1 ">
+                            <div class="promo-card-content mx-35 mt-50">
+                                <h4 class="title-card-front">Wacom + Painter 2021</h4> 
+                                <p class="descrition-card-front">Satisfy all your digital painting needs with the power and precision of these award-winning bundles.</p>
+                                <span class="btn-white">learn more</span>
+                            </div>
+                        </div>
+                        
+                        <!-- right -->
+                        <div class="col-6 ">
+                            <div class="promo-card promo-card-bg-img-1"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- riga 2 -->
+                    <div class="col-12 d-flex mx-15">
+                        
+                        <!-- left -->
+                        <div class="col-6 ">
+                            <div class="promo-card promo-card-bg-img-2"></div>
+                        </div>
+
+                        <!-- right -->
+                        <div class="col-6 promo-card promo-card-bg-2 ">
+                            <div class="promo-card-content mx-35 mt-50">
+                                <h4 class="title-card-front">Painter Masters</h4>
+                                <p class="descrition-card-front">Gain inspiration and knowledge from professional artists who have mastered Painter, and excel in their craft.</p>
+                                <span class="btn-white">learn more</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- riga 3 -->
+                    <div class="col-12 d-flex mx-15">
+                        
+                        <!-- left -->
+                        <div class="col-6 promo-card promo-card-bg-3 ">
+                            <div class="promo-card-content mx-35 mt-50">
+                                <h4 class="title-card-front">Business & Education</h4> 
+                                <p class="descrition-card-front">Save money on our award-winning painting software thanks to affordable and flexible licensing options.</p>
+                                <span class="btn-white">learn more</span>
+                            </div>
+                        </div>
+                        
+                        <!-- right -->
+                        <div class="col-6 ">
+                            <div class="promo-card promo-card-bg-img-3"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- footer -->
+                <div class="footer mt-40 mb-30">
+                    <div class="container">
+                        
+                        <div class="col-12 d-flex">
+                            
+                            <!-- colonne footer -->
+                            <div class="footer-group col-3 mx-15" v-for="voce in footer">
+                                
+                                <!-- titolo footer -->
+                                <h3 class="footer-title capitalizze">{{voce.title}}</h3>
+                                
+                                <!-- voci item gruppo -->
+                                <ul v-for="item in voce.items">
+                                    <li>
+                                        <a class="footer-item capitalizze" href="#">{{item}}</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                        
+                        <!-- social button -->
+                        <div class="socials">
+                            <span :class="social.color" v-for="(social,index) in socials">
+                                <span v-html="social.icon"></span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
     </div>
 
     <script src="dist/app.js"></script>

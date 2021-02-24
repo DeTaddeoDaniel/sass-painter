@@ -1,0 +1,31 @@
+@mixin buttons {
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.btn-dark{
+    @include buttons;
+    background-color: black;
+    color: white;
+}
+
+.btn-dark:hover{
+    @include buttons;
+    background-color: $text-gray-dark;
+}
+
+.btn-light{
+    @include buttons;
+    background-color: transparent;
+    color: black;
+}
+
+.btn-white{
+    @include buttons;
+    background-color: white;
+    color: black;
+    border-color: white;
+}

@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* ---- struttura -----*/
@@ -104,40 +106,128 @@
 }
 
 /* ---- utility -----*/
+/* ---- container -----*/
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---- utility display ----*/
 .d-flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
+.d-flex-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* ---- PADDING e MARGIN -------*/
+.p-jumbotron {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.mx-35 {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.mx-20 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.mx-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.w-250 {
+  max-width: 250px;
+}
+
+/* ---- ALTEZZA -------*/
 .h-100 {
   height: 100%;
 }
 
 /* ---- COLORE TESTO ----*/
-.text-text-light-blue {
+.text-light-blue {
   color: #009cff;
 }
 
-.text-text-gray-dark {
+.text-gray-dark {
   color: #989898;
 }
 
-.text-text-white {
+.text-white {
   color: #ffffff;
 }
 
-.text-text-black {
+.text-black {
   color: #020201;
 }
 
-.text-text-logo {
+.text-logo {
   color: #d9d9d9;
 }
 
-.text-text-purple {
+.text-purple {
   color: #c70e8b;
+}
+
+.bg-pink {
+  background-color: #e4405f;
+}
+
+.bg-blue {
+  background-color: #3b5998;
+}
+
+.bg-light-blue {
+  background-color: #1da1f2;
+}
+
+.bg-red {
+  background-color: #cd201f;
+}
+
+.bg-red-dark {
+  background-color: #bd081c;
+}
+
+.bg-orange {
+  background-color: #ff8d00;
 }
 
 /* ---- ALLINEAMENTO TESTO ----*/
@@ -155,15 +245,136 @@
 
 /* ---- SPESSORE TESTO ----*/
 .text-bold {
-  text-align: bold;
+  font-weight: bold;
 }
 
 .text-normal {
-  text-align: normal;
+  font-weight: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ---- FONT-SIZE ----- */
+.text-21 {
+  font-size: 21px;
+}
+
+.text-16 {
+  font-size: 16px;
 }
 
 /* ---- componenti base -----*/
+.btn-dark {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 15px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.btn-dark:hover {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 15px;
+  display: inline-block;
+  background-color: #989898;
+}
+
+.btn-light {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 15px;
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+}
+
+.btn-white {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 15px;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
 /* ---- card ----*/
+.card {
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.card .content-card {
+  padding: 15px 25px 25px 25px;
+}
+.card img {
+  width: 100%;
+}
+.card h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.card p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+.card:hover .linking {
+  text-decoration: underline;
+}
+
+.promo-card {
+  min-height: 325px;
+  color: white;
+}
+.promo-card h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.promo-card p {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 18px;
+}
+.promo-card-bg-1 {
+  background-color: #3c1567;
+}
+.promo-card-bg-img-1 {
+  background-image: url("/img/wacom-painter-1.jpg");
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+}
+.promo-card-bg-2 {
+  background-color: #3c3c3c;
+}
+.promo-card-bg-img-2 {
+  background-image: url("/img/painter-master.jpg");
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+}
+.promo-card-bg-3 {
+  background-color: #0072bc;
+}
+.promo-card-bg-img-3 {
+  background-image: url("/img/business-education.jpg");
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+}
+
 /* ---- nav ----*/
 /* ---- dropdown ----*/
 /* ---- layout -----*/
@@ -205,5 +416,78 @@ ul li {
 }
 
 /* ---- jumbotron ----*/
+.jumbotron {
+  height: 480px;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/bg-painter-home.jpg");
+}
+.jumbotron .container {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+}
+
 /* ---- section ----*/
+section {
+  padding-top: 25px;
+  padding-bottom: 60px;
+  background-color: #ececec;
+}
+section h2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 32px;
+}
+
 /* ---- footer ----*/
+.footer-group {
+  margin-bottom: 10px;
+}
+.footer-title {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.footer-item {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+.footer-item:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.social {
+  display: block;
+}
+.social-icon {
+  margin-right: 10px;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  line-height: 35px;
+  color: white;
+  text-align: center;
+}
+
+/*
+
+                                <!-- voci item gruppo -->
+                                <ul v-for="item in voce.items">
+                                    <li>
+                                        <a class="footer-item" href="#">{{item}}</a>
+                                    </li> col-3 mx-15" v-for="voce in footer">
+
+
+*/
